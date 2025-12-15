@@ -1,0 +1,34 @@
+-- Gui Jumpscare
+
+    local JumpscareGui = Instance.new("ScreenGui")
+    local Background = Instance.new("Frame")
+    local Face = Instance.new("ImageLabel")
+
+    JumpscareGui.Name = "NightmareRushJumpscareGui"
+    JumpscareGui.IgnoreGuiInset = true
+    JumpscareGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    JumpscareGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+    Background.Name = "Background"
+    Background.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    Background.BorderSizePixel = 0
+    Background.Size = UDim2.new(1, 0, 1, 0)
+    Background.ZIndex = 999
+
+    Face.Name = "Face"
+    Face.AnchorPoint = Vector2.new(0.5, 0.5)
+    Face.BackgroundTransparency = 1
+    Face.Position = UDim2.new(0.5, 0, 0.5, 0)
+    Face.ResampleMode = Enum.ResamplerMode.Pixelated
+    Face.Size = UDim2.new(0, 200, 0, 200)
+    Face.Image = "rbxassetid://10888024887"
+
+    Background.Parent = JumpscareGui
+    Face.Parent = Background
+local scare = Instance.new("Sound")
+scare.Parent = JumpscareGui
+scare.Name = "FunnyScare"
+scare.SoundId = "rbxassetid://5263560566"
+scare.PlaybackSpeed = 0.7
+scare.Volume = 1.2
+  end
