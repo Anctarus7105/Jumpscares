@@ -28,7 +28,7 @@
 local scare = Instance.new("Sound")
 scare.Parent = JumpscareGui
 scare.Name = "FunnyScare"
-scare.SoundId = "rbxassetid://5263560566"
+scare.SoundId = LoadCustomAsset("https://github.com/reboundplayz/Boppies-doors-fear-mode-sounds/raw/main/Project%20Name%2039.mp3")
 scare.PlaybackSpeed = 1.4
 scare.Volume = 1.2
   end
